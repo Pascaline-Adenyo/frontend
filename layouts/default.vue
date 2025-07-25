@@ -3,17 +3,16 @@
     <div
       v-if="mobileSidebarOpen"
       @click="mobileSidebarOpen = false"
-      class="fixed inset-0 transition-opacity duration-300 bg-black/50 backdrop-blur-sm lg:hidden"
+      class="fixed inset-0 transition-opacity duration-300 bg-black/50 backdrop-blur-sm lg:hidden z-40"
     ></div>
 
-    <aside class="fixed inset-y-0 left-0 z-50 w-64  h-screen overflow-hidden">
+    <aside class="fixed inset-y-0 left-0 z-50 w-64 h-screen overflow-hidden">
     <div class="flex flex-col h-full bg-gradient-to-b from-sky-800 to-sky-900 shadow-xl">
     <!-- Header fixe -->
     <div class="flex-shrink-0 px-6 py-5 border-b border-sky-700 bg-sky-800 sticky top-0 z-10">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-3">
           <a href="#" class="flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm">
-            <!-- Utilisation d'un placeholder SVG ou remplacez par votre logo -->
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
@@ -29,12 +28,7 @@
           class="p-2 text-white/70 transition-colors rounded-lg lg:hidden hover:text-white hover:bg-white/10"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -50,18 +44,8 @@
             >
               <div class="nav-icon">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M8 5a2 2 0 012-2h4a2 2 0 012 2v3H8V5z"
-                  ></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v3H8V5z"></path>
                 </svg>
               </div>
               <div class="flex-1">
@@ -178,12 +162,7 @@
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
                 </div>
               </button>
@@ -197,12 +176,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -218,12 +192,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -239,12 +208,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16l3.5-2 3.5 2 3.5-2 3.5 2z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16l3.5-2 3.5 2 3.5-2 3.5 2z"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -278,12 +242,7 @@
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
                 </div>
               </button>
@@ -297,12 +256,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0h2m-2 0h-4m-5 0H3m2 0v-3.5a1.5 1.5 0 00-1.5-1.5h0a1.5 1.5 0 00-1.5 1.5V21"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0h2m-2 0h-4m-5 0H3m2 0v-3.5a1.5 1.5 0 00-1.5-1.5h0a1.5 1.5 0 00-1.5 1.5V21"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -318,12 +272,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -339,12 +288,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -360,12 +304,7 @@
                   >
                     <div class="nav-icon">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                       </svg>
                     </div>
                     <div class="flex-1">
@@ -579,60 +518,58 @@
           </div>
           
           <!-- Menu utilisateur -->
-          <div
-            v-if="showUserMenu"
-            class="absolute bottom-20 left-4 right-4 z-50 py-2 bg-white rounded-xl shadow-2xl border border-gray-200 transform transition-all duration-200"
-            @click.stop
-          >
-            <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-              </svg>
-              Mon Profil
-            </a>
-            <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              Paramètres
-            </a>
-            <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Aide
-            </a>
-            <div class="border-t border-gray-100 mt-2 pt-2">
-              <button
-                @click="logout"
-                class="flex items-center gap-3 w-full px-4 py-3 text-sm text-red-600 hover:bg-red-50 transition-colors"
-              >
+          <transition name="user-menu">
+            <div
+              v-if="showUserMenu"
+              class="absolute bottom-20 left-4 right-4 z-50 py-2 bg-white rounded-xl shadow-2xl border border-gray-200 transform transition-all duration-200"
+              @click.stop
+            >
+              <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>
-                Déconnexion
-              </button>
+                Mon Profil
+              </a>
+              <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Paramètres
+              </a>
+              <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Aide
+              </a>
+              <div class="border-t border-gray-100 mt-2 pt-2">
+                <button
+                  @click="logout"
+                  class="flex items-center gap-3 w-full px-4 py-3 text-sm text-red-600 hover:bg-red-50 transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                  </svg>
+                  Déconnexion
+                </button>
+              </div>
             </div>
-          </div>
+          </transition>
         </div>
       </div>
     </aside>
 
-    <div class="flex flex-col flex-1 ml-64">
-      <header class="flex items-center justify-between h-16 px-6 bg-white border-b border-gray-200 shadow-sm">
+    <!-- Main content area avec padding pour le sidebar -->
+    <div class="flex flex-col flex-1 lg:ml-64">
+      <header class="flex items-center justify-between h-16 px-6 bg-white border-b border-gray-200 shadow-sm sticky top-0 z-30">
         <div class="flex items-center space-x-4">
           <button
             @click="mobileSidebarOpen = !mobileSidebarOpen"
             class="p-2 text-gray-600 rounded-md lg:hidden hover:text-gray-900 hover:bg-gray-100"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
           <h1 class="text-xl font-semibold text-gray-900">{{ pageTitle }}</h1>
@@ -646,50 +583,77 @@
               class="w-64 py-2 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
             />
             <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
           </div>
 
           <button class="relative p-2 text-gray-400 hover:text-gray-600">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.586V11a6 6 0 10-12 0v3.586c0 .53-.21 1.04-.595 1.414L4 17h5m6 0a3 3 0 11-6 0h6z"
-              ></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.586V11a6 6 0 10-12 0v3.586c0 .53-.21 1.04-.595 1.414L4 17h5m6 0a3 3 0 11-6 0h6z"></path>
             </svg>
             <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
           </button>
 
           <div class="relative">
             <button
+              @click="showHeaderUserMenu = !showHeaderUserMenu"
               class="flex items-center p-2 space-x-2 rounded-lg hover:bg-gray-100"
             >
               <div class="w-8 h-8 bg-gradient-to-br from-sky-500 to-sky-600 rounded-full flex items-center justify-center">
                 <span class="text-sm font-semibold text-white">AA</span>
               </div>
-              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
+              <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" :class="{ 'rotate-180': showHeaderUserMenu }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
+
+            <!-- Menu utilisateur du header -->
+            <transition name="header-user-menu">
+              <div
+                v-if="showHeaderUserMenu"
+                class="absolute right-0 top-full mt-2 w-48 py-2 bg-white rounded-lg shadow-xl border border-gray-200 z-50"
+                @click.stop
+              >
+                <a href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                  </svg>
+                  Mon Profil
+                </a>
+                <a href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                  Paramètres
+                </a>
+                <a href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  Aide
+                </a>
+                <div class="border-t border-gray-100 mt-2 pt-2">
+                  <button
+                    @click="logout"
+                    class="flex items-center gap-3 w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                    </svg>
+                    Déconnexion
+                  </button>
+                </div>
+              </div>
+            </transition>
           </div>
         </div>
       </header>
 
-      <div class="flex-1 p-6 bg-gray-100">
+      <!-- Zone de contenu principal avec un seul background -->
+      <main class="flex-1 bg-gradient-to-br from-slate-50 to-slate-100">
         <slot />
-      </div>
+      </main>
     </div>
   </div>
 </template>
@@ -705,6 +669,7 @@ const authStore = useAuthStore()
 
 // State
 const showUserMenu = ref(false)
+const showHeaderUserMenu = ref(false)
 const mobileSidebarOpen = ref(false)
 
 // Sections dépliables
@@ -760,6 +725,7 @@ const handleClickOutside = (event: Event) => {
   const target = event.target as Element
   if (!target.closest('.relative') && !target.closest('[data-user-menu]')) {
     showUserMenu.value = false
+    showHeaderUserMenu.value = false
   }
 }
 
@@ -768,6 +734,7 @@ const logout = () => {
   authStore.logout()
   router.push('/login')
   showUserMenu.value = false
+  showHeaderUserMenu.value = false
 }
 
 const pageTitle = computed(() => {
@@ -785,20 +752,6 @@ const pageTitle = computed(() => {
 </script>
 
 <style scoped>
-.nav-item {
-  @apply flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all duration-200;
-  @apply text-white/90 hover:bg-white/10 hover:text-white;
-}
-
-.nav-item-active {
-  @apply bg-white/15 border-l-4 border-white/50 text-white;
-  @apply shadow-lg backdrop-blur-sm;
-}
-
-.nav-item-nested {
-  @apply ml-4 relative;
-}
-
 .nav-item-nested::before {
   content: '';
   @apply absolute left-0 top-0 bottom-0 w-0.5 bg-white/30;
@@ -904,10 +857,40 @@ const pageTitle = computed(() => {
   transform: rotate(180deg);
 }
 
-/* Animation du menu utilisateur */
+/* Animations des menus utilisateur */
 .user-menu-enter-active,
 .user-menu-leave-active {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-   transform-origin: top;
+}
+
+.user-menu-enter-from,
+.user-menu-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+
+.header-user-menu-enter-active,
+.header-user-menu-leave-active {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-user-menu-enter-from,
+.header-user-menu-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+.nav-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all duration-200;
+  @apply text-white/90 hover:bg-white/10 hover:text-white;
+}
+
+.nav-item-active {
+  @apply bg-white/15 border-l-4 border-white/50 text-white;
+  @apply shadow-lg backdrop-blur-sm;
+}
+
+.nav-item-nested {
+  @apply ml-4 relative;
 }
 </style>
+
